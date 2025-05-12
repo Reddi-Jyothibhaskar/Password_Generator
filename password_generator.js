@@ -12,10 +12,6 @@ function generatePassword()
 	{
 		let randomIndex = Math.floor(Math.random()*chars.length);
 		password += chars[randomIndex];
-		if(i < length - 1)
-		{
-			password += ' ';
-		}
 	}
 	document.getElementById("password").textContent = password;
 }
